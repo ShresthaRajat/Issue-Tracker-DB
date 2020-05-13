@@ -1,0 +1,1 @@
+ALTER TABLE atrefacts ADD CONSTRAINT atrefacts_pk PRIMARY KEY ( artefact_id );

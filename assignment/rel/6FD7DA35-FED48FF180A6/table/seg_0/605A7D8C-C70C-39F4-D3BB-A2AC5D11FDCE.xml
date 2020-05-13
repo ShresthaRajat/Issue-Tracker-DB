@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="605A7D8C-C70C-39F4-D3BB-A2AC5D11FDCE" name="Comments">
+<createdBy>root</createdBy>
+<createdTime>2020-05-09 14:16:27 UTC</createdTime>
+<ownerDesignName>assignment</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<abbreviation>c</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Comment_ID" id="3FD29F23-BE65-320C-E88E-66743EEF4728">
+<createdBy>root</createdBy>
+<createdTime>2020-05-09 14:16:27 UTC</createdTime>
+<ownerDesignName>assignment</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Username" id="50E187EC-D526-824C-9B4C-6C1661B67607">
+<createdBy>root</createdBy>
+<createdTime>2020-05-09 14:16:27 UTC</createdTime>
+<ownerDesignName>assignment</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B529E192-3057-6207-B301-509B5ADD4D63" referredColumn="37433856-692B-3B29-19CC-66693DAA2E0D"/>
+</associations>
+</Column>
+<Column name="Date" id="C73D2234-E71C-3F61-7EEB-BD2A5CE25DA4">
+<createdBy>root</createdBy>
+<createdTime>2020-05-09 14:16:27 UTC</createdTime>
+<ownerDesignName>assignment</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Text" id="03A5F224-3DF2-8D2A-C3D0-89F5F81D591B">
+<createdBy>root</createdBy>
+<createdTime>2020-05-09 14:16:27 UTC</createdTime>
+<ownerDesignName>assignment</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500 CHAR</dataTypeSize>
+<ownDataTypeParameters>500 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="630A62C5-E937-AD24-1F69-8878285C5A13" name="Comments_PK">
+<createdBy>root</createdBy>
+<createdTime>2020-05-09 14:16:27 UTC</createdTime>
+<ownerDesignName>assignment</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3FD29F23-BE65-320C-E88E-66743EEF4728"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="684BEE17-A494-13F5-3226-F594F8C1FD1D" name="Comments_Users_FK">
+<createdBy>root</createdBy>
+<createdTime>2020-05-09 14:16:27 UTC</createdTime>
+<ownerDesignName>assignment</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="50E187EC-D526-824C-9B4C-6C1661B67607"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

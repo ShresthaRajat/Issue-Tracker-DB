@@ -1,0 +1,1 @@
+ALTER TABLE worklogs ADD CONSTRAINT worklog_pk PRIMARY KEY ( worklog_id );

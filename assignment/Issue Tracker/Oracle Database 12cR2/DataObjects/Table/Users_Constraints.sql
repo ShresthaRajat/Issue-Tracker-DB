@@ -1,0 +1,1 @@
+ALTER TABLE users ADD CONSTRAINT employees_pk PRIMARY KEY ( username );

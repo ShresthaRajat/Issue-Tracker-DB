@@ -1,0 +1,4 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="main_view" objectID="C7822DAC-FF01-453C-B741-F0FD57C60FFB" name="Issue Tracker" visible="true"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

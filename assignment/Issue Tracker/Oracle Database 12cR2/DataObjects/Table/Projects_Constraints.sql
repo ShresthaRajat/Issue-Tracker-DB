@@ -1,0 +1,1 @@
+ALTER TABLE projects ADD CONSTRAINT projects_pk PRIMARY KEY ( project_id );

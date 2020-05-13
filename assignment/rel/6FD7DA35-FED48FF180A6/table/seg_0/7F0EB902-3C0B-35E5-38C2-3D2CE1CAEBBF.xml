@@ -1,0 +1,155 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7F0EB902-3C0B-35E5-38C2-3D2CE1CAEBBF" name="Tickets">
+<createdBy>root</createdBy>
+<createdTime>2020-05-09 14:16:27 UTC</createdTime>
+<ownerDesignName>assignment</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<abbreviation>t</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Issue_ID" id="794846B1-01C9-38CB-983E-CD30A55869E2">
+<createdBy>root</createdBy>
+<createdTime>2020-05-09 14:16:27 UTC</createdTime>
+<ownerDesignName>assignment</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Issue" id="1CFEC6DE-725F-F2D6-EEE0-A6AC41BA9456">
+<createdBy>root</createdBy>
+<createdTime>2020-05-09 14:16:27 UTC</createdTime>
+<ownerDesignName>assignment</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Type" id="7623B0D0-1753-2E3F-0E5C-878B32668F65">
+<createdBy>root</createdBy>
+<createdTime>2020-05-09 14:16:27 UTC</createdTime>
+<ownerDesignName>assignment</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT051</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Date" id="F258B1DD-E0AD-C9F0-BE01-831388FE9A23">
+<createdBy>root</createdBy>
+<createdTime>2020-05-09 14:16:27 UTC</createdTime>
+<ownerDesignName>assignment</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Status" id="654278D1-CA00-C48A-BB36-FFE7FB68E08C">
+<createdBy>root</createdBy>
+<createdTime>2020-05-09 14:16:27 UTC</createdTime>
+<ownerDesignName>assignment</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Parent_Issue" id="38C4DF55-A3BC-370D-2A53-11E7F81B6C20">
+<createdBy>root</createdBy>
+<createdTime>2020-05-09 14:16:27 UTC</createdTime>
+<ownerDesignName>assignment</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E7DA52FB-EAB7-2D27-0056-6408D61DA1EC" referredColumn="794846B1-01C9-38CB-983E-CD30A55869E2"/>
+</associations>
+</Column>
+<Column name="Reporter" id="F1B89FA5-202C-12C6-F246-A48A0B577451">
+<createdBy>root</createdBy>
+<createdTime>2020-05-09 14:16:27 UTC</createdTime>
+<ownerDesignName>assignment</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0C625FBE-E047-E645-0414-EB403EEE8490" referredColumn="37433856-692B-3B29-19CC-66693DAA2E0D"/>
+</associations>
+</Column>
+<Column name="Project_ID" id="4882F195-B225-D681-E7A1-41ACC0B09826">
+<createdBy>root</createdBy>
+<createdTime>2020-05-09 14:16:27 UTC</createdTime>
+<ownerDesignName>assignment</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B7FECB8D-1249-F4C2-3C4D-BF19DF1B319D" referredColumn="195D729E-898C-AC28-66D1-B2EF205D14C2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BCEB9931-6561-4464-BE8E-201753C1E45B" name="Ticket_PK">
+<createdBy>root</createdBy>
+<createdTime>2020-05-09 14:16:27 UTC</createdTime>
+<ownerDesignName>assignment</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="794846B1-01C9-38CB-983E-CD30A55869E2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DA458B0B-D23D-4949-95D1-A9DDB0375EDA" name="Parent_Issue_FK">
+<createdBy>root</createdBy>
+<createdTime>2020-05-09 14:16:27 UTC</createdTime>
+<ownerDesignName>assignment</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="38C4DF55-A3BC-370D-2A53-11E7F81B6C20"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="908D0841-24BC-0287-7F9A-72045AE6A85E" name="Tickets_Users_FK">
+<createdBy>root</createdBy>
+<createdTime>2020-05-09 14:16:27 UTC</createdTime>
+<ownerDesignName>assignment</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F1B89FA5-202C-12C6-F246-A48A0B577451"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E2244853-677A-2B2E-77E0-AE85E5AE2F0F" name="Tickets_Projects_FK">
+<createdBy>root</createdBy>
+<createdTime>2020-05-09 14:16:27 UTC</createdTime>
+<ownerDesignName>assignment</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4882F195-B225-D681-E7A1-41ACC0B09826"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

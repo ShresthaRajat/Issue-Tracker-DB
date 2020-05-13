@@ -1,0 +1,1 @@
+ALTER TABLE comments ADD CONSTRAINT comments_pk PRIMARY KEY ( comment_id );

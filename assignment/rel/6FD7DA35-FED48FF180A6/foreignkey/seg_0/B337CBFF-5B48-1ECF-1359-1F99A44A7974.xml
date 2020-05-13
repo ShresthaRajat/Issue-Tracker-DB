@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B337CBFF-5B48-1ECF-1359-1F99A44A7974" containerWithKeyObject="8847C3D8-A355-EE44-E94B-3EF1A0A306C9" localFKIndex="279B5C42-BFC3-2400-6FC2-649EACBFA05D" name="Ticket_ArteFacts_Atrefacts_FK">
+<createdBy>root</createdBy>
+<createdTime>2020-05-09 14:16:27 UTC</createdTime>
+<ownerDesignName>assignment</ownerDesignName>
+<referredTableLongName>Atrefacts</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>665F8D04-41C8-29ED-834D-6365EE77DC13</referredTableID>
+<keyObject>82C0CAC0-165B-9756-33DC-0EF28D8CB249</keyObject>
+<referredKeyID>82C0CAC0-165B-9756-33DC-0EF28D8CB249</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Artefact_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

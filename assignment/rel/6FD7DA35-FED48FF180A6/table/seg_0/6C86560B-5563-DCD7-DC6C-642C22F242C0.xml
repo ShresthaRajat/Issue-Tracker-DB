@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6C86560B-5563-DCD7-DC6C-642C22F242C0" name="Ticket_Comments">
+<createdBy>root</createdBy>
+<createdTime>2020-05-09 14:16:27 UTC</createdTime>
+<ownerDesignName>assignment</ownerDesignName>
+<ordsAlias>table_12</ordsAlias>
+<abbreviation>tc</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Comments_Comment_ID" id="FE9FF413-9087-0003-08D4-65BB0D90764D">
+<createdBy>root</createdBy>
+<createdTime>2020-05-09 14:16:27 UTC</createdTime>
+<ownerDesignName>assignment</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="066B8FE5-04DB-D883-642D-8A08120C2A22" referredColumn="3FD29F23-BE65-320C-E88E-66743EEF4728"/>
+</associations>
+</Column>
+<Column name="Tickets_Issue_ID" id="720268C5-140A-7D9E-ABB3-107825D4EC23">
+<createdBy>root</createdBy>
+<createdTime>2020-05-09 14:16:27 UTC</createdTime>
+<ownerDesignName>assignment</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="798D936F-48C5-EB7D-E20E-6BC90B84D2CE" referredColumn="794846B1-01C9-38CB-983E-CD30A55869E2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="742899E8-1C93-1801-30FF-B3756218C64B" name="Ticket_Comments_PK">
+<createdBy>root</createdBy>
+<createdTime>2020-05-09 14:36:41 UTC</createdTime>
+<ownerDesignName>assignment</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FE9FF413-9087-0003-08D4-65BB0D90764D"/>
+<colUsage columnID="720268C5-140A-7D9E-ABB3-107825D4EC23"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B7F23646-18DF-12D0-8C44-FC65B7129A5B" name="Ticket_Comments_Comments_FK">
+<createdBy>root</createdBy>
+<createdTime>2020-05-09 14:16:27 UTC</createdTime>
+<ownerDesignName>assignment</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FE9FF413-9087-0003-08D4-65BB0D90764D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="25E204AF-2497-0364-0FFC-D11617BE29DD" name="Ticket_Comments_Tickets_FK">
+<createdBy>root</createdBy>
+<createdTime>2020-05-09 14:16:27 UTC</createdTime>
+<ownerDesignName>assignment</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="720268C5-140A-7D9E-ABB3-107825D4EC23"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

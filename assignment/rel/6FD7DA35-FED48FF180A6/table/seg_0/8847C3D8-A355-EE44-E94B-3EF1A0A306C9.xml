@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8847C3D8-A355-EE44-E94B-3EF1A0A306C9" name="Ticket_ArteFacts">
+<createdBy>root</createdBy>
+<createdTime>2020-05-09 14:16:27 UTC</createdTime>
+<ownerDesignName>assignment</ownerDesignName>
+<ordsAlias>table_11</ordsAlias>
+<abbreviation>ta</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Tickets_Issue_ID" id="1335D560-306F-CBD5-B172-528925F81F94">
+<createdBy>root</createdBy>
+<createdTime>2020-05-09 14:16:27 UTC</createdTime>
+<ownerDesignName>assignment</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1B852B09-B350-B972-1988-247412A051E0" referredColumn="794846B1-01C9-38CB-983E-CD30A55869E2"/>
+</associations>
+</Column>
+<Column name="Atrefacts_Artefact_ID" id="0AEBD4A8-55CB-86F1-271B-ECA3CEC72EE9">
+<createdBy>root</createdBy>
+<createdTime>2020-05-09 14:16:27 UTC</createdTime>
+<ownerDesignName>assignment</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B337CBFF-5B48-1ECF-1359-1F99A44A7974" referredColumn="6F69DB2B-9A65-09A5-9519-804A82AD5EF1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BA836BBD-3693-A62A-A1CF-C5A3391086B3" name="Ticket_ArteFacts_PK">
+<createdBy>root</createdBy>
+<createdTime>2020-05-09 14:36:46 UTC</createdTime>
+<ownerDesignName>assignment</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1335D560-306F-CBD5-B172-528925F81F94"/>
+<colUsage columnID="0AEBD4A8-55CB-86F1-271B-ECA3CEC72EE9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5E6FD6DA-6D72-45FE-E244-4549FAB5F93F" name="Ticket_ArteFacts_Tickets_FK">
+<createdBy>root</createdBy>
+<createdTime>2020-05-09 14:16:27 UTC</createdTime>
+<ownerDesignName>assignment</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1335D560-306F-CBD5-B172-528925F81F94"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="279B5C42-BFC3-2400-6FC2-649EACBFA05D" name="Ticket_ArteFacts_Atrefacts_FK">
+<createdBy>root</createdBy>
+<createdTime>2020-05-09 14:16:27 UTC</createdTime>
+<ownerDesignName>assignment</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0AEBD4A8-55CB-86F1-271B-ECA3CEC72EE9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

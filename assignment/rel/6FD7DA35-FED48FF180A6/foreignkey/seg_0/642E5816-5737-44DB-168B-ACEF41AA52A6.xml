@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="642E5816-5737-44DB-168B-ACEF41AA52A6" containerWithKeyObject="54F185C3-C082-C4A2-FAD6-9033602ED18C" localFKIndex="BF5E4FC4-1E19-ECAE-57E1-4D91F52033F4" name="Assigned_User_Worklog_Worklogs_FK">
+<createdBy>root</createdBy>
+<createdTime>2020-05-09 14:16:27 UTC</createdTime>
+<ownerDesignName>assignment</ownerDesignName>
+<referredTableLongName>Worklogs</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>9617230D-C446-1DE4-2260-4D1004431121</referredTableID>
+<keyObject>FB13510E-BCB1-B27A-31C4-012FA5043EE8</keyObject>
+<referredKeyID>FB13510E-BCB1-B27A-31C4-012FA5043EE8</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Worklog_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

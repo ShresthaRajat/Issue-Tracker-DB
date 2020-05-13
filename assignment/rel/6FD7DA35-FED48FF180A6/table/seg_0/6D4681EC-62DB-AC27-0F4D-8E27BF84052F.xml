@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6D4681EC-62DB-AC27-0F4D-8E27BF84052F" name="Assigned_User">
+<createdBy>root</createdBy>
+<createdTime>2020-05-09 14:16:27 UTC</createdTime>
+<ownerDesignName>assignment</ownerDesignName>
+<ordsAlias>table_8</ordsAlias>
+<abbreviation>au</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Issue_ID" id="11E2435B-8596-BFD0-8FCD-4805F90547D2">
+<createdBy>root</createdBy>
+<createdTime>2020-05-09 14:16:27 UTC</createdTime>
+<ownerDesignName>assignment</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="939D4E0B-A276-8D70-A0FA-24AEFDBE58AB" referredColumn="794846B1-01C9-38CB-983E-CD30A55869E2"/>
+</associations>
+</Column>
+<Column name="Username" id="822C13C4-E45D-5E4D-7559-765128CA375D">
+<createdBy>root</createdBy>
+<createdTime>2020-05-09 14:16:27 UTC</createdTime>
+<ownerDesignName>assignment</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="02F38927-C090-28C0-3ABF-05B87A8294CB" referredColumn="37433856-692B-3B29-19CC-66693DAA2E0D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DC2D9C56-BE77-1AE8-1740-95DA4D6BC19C" name="Assigned_User_PK">
+<createdBy>root</createdBy>
+<createdTime>2020-05-09 14:16:27 UTC</createdTime>
+<ownerDesignName>assignment</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="11E2435B-8596-BFD0-8FCD-4805F90547D2"/>
+<colUsage columnID="822C13C4-E45D-5E4D-7559-765128CA375D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DE6EA1C1-8BC7-9ADF-F0B0-308CFFC4F628" name="Assigned_User_Tickets_FK">
+<createdBy>root</createdBy>
+<createdTime>2020-05-09 14:16:27 UTC</createdTime>
+<ownerDesignName>assignment</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="11E2435B-8596-BFD0-8FCD-4805F90547D2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B6DDA53C-0CBB-16E6-1620-5133E428FE0C" name="Assigned_User_Users_FK">
+<createdBy>root</createdBy>
+<createdTime>2020-05-09 14:16:27 UTC</createdTime>
+<ownerDesignName>assignment</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="822C13C4-E45D-5E4D-7559-765128CA375D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
