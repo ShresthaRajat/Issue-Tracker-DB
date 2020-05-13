@@ -15,23 +15,3 @@ SELECT * FROM all_users ORDER BY created;
 create user rajat identified by rajat;
 grant all privileges to rajat; 
 commit;
-
-
-
-
-create user Administrators identified by admin;
-grant user Administrator dba;
-
-
-
-create user Users identified by user;
-grant 
-
-
-
-
-
-
-drop user rajat cascade;
-drop user administrators cascade;
-drop user users cascade;
