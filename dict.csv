@@ -1,0 +1,106 @@
+Column_Name,Mandatory,DataType_Kind,Logical_Type_Name,PK_Flag,FK_Flag,Native_Type,T_Size,Table_Name
+,,,,,,,,
+Tickets_Issue_ID,Y,Logical Type,Integer,P,F,INTEGER,,Ticket_Comments
+Comments_Comment_ID,Y,Logical Type,Integer,P,F,INTEGER,,Ticket_Comments
+,,,,,,,,
+,,,,,,,,
+Tickets_Issue_ID,Y,Logical Type,Integer,P,F,INTEGER,,Ticket_ArteFacts
+Atrefacts_Artefact_ID,Y,Logical Type,Integer,P,F,INTEGER,,Ticket_ArteFacts
+,,,,,,,,
+,,,,,,,,
+Worklog_ID,Y,Logical Type,Integer,P,,INTEGER,,Worklogs
+Date,Y,Logical Type,Date,,,DATE,,Worklogs
+Milestone,Y,Logical Type,VARCHAR,,,VARCHAR2,100 CHAR,Worklogs
+Details,Y,Logical Type,VARCHAR,,,VARCHAR2,500 CHAR,Worklogs
+,,,,,,,,
+,,,,,,,,
+Issue_ID,Y,Logical Type,Integer,P,F,INTEGER,,Assigned_User_Worklog
+Username,Y,Logical Type,VARCHAR,P,F,VARCHAR2,100 CHAR,Assigned_User_Worklog
+Worklog_ID,Y,Logical Type,Integer,P,F,INTEGER,,Assigned_User_Worklog
+,,,,,,,,
+,,,,,,,,
+Issue_ID,Y,Logical Type,Integer,P,F,INTEGER,,Assigned_User
+Username,Y,Logical Type,VARCHAR,P,F,VARCHAR2,100 CHAR,Assigned_User
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+Project_ID,Y,Logical Type,Integer,P,,INTEGER,,Projects
+Title,Y,Logical Type,VARCHAR,,,VARCHAR2,100 CHAR,Projects
+Description,N,Logical Type,VARCHAR,,,VARCHAR2,500 CHAR,Projects
+Completion_date,Y,Logical Type,Datetime,,,DATE,,Projects
+Creator,Y,Logical Type,VARCHAR,,F,VARCHAR2,100 CHAR,Projects
+,,,,,,,,
+,,,,,,,,
+Username,Y,Logical Type,VARCHAR,P,,VARCHAR2,100 CHAR,Users
+Name,Y,Logical Type,VARCHAR,,,VARCHAR2,100 CHAR,Users
+Department,Y,Logical Type,VARCHAR,,,VARCHAR2,100 CHAR,Users
+Designation,Y,Logical Type,VARCHAR,,,VARCHAR2,100 CHAR,Users
+Contact,Y,Logical Type,VARCHAR,,,VARCHAR2,100 CHAR,Users
+Password,Y,Logical Type,VARCHAR,,,VARCHAR2,100 CHAR,Users
+,,,,,,,,
+,,,,,,,,
+Issue_ID,Y,Logical Type,Integer,P,,INTEGER,,Tickets
+Issue,N,Logical Type,VARCHAR,,,VARCHAR2,255 CHAR,Tickets
+Type,N,Logical Type,URIType,,,VARCHAR2,100 CHAR,Tickets
+Date,Y,Logical Type,Date,,,DATE,,Tickets
+Status,Y,Logical Type,VARCHAR,,,VARCHAR2,100 CHAR,Tickets
+Parent_Issue,N,Logical Type,Integer,,F,INTEGER,,Tickets
+Project_ID,Y,Logical Type,Integer,,F,INTEGER,,Tickets
+Reporter,Y,Logical Type,VARCHAR,,F,VARCHAR2,100 CHAR,Tickets
+,,,,,,,,
+,,,,,,,,
+Artefact_ID,Y,Logical Type,Integer,P,,INTEGER,,Atrefacts
+Username,Y,Logical Type,VARCHAR,,F,VARCHAR2,100 CHAR,Atrefacts
+Title,Y,Logical Type,VARCHAR,,,VARCHAR2,100 CHAR,Atrefacts
+Description,Y,Logical Type,VARCHAR,,,VARCHAR2,500 CHAR,Atrefacts
+Category,Y,Logical Type,VARCHAR,,,VARCHAR2,100 CHAR,Atrefacts
+Size,Y,Logical Type,VARCHAR,,,VARCHAR2,100 CHAR,Atrefacts
+Data,N,Logical Type,HTTPURIType,,,HTTPURITYPE,,Atrefacts
+,,,,,,,,
+,,,,,,,,
+Comment_ID,Y,Logical Type,Integer,P,,INTEGER,,Comments
+Username,Y,Logical Type,VARCHAR,,F,VARCHAR2,100 CHAR,Comments
+Date,Y,Logical Type,Date,,,DATE,,Comments
+Text,Y,Logical Type,VARCHAR,,,VARCHAR2,500 CHAR,Comments
